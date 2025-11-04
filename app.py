@@ -22,7 +22,7 @@ if V > 0:
     st.latex(fr"E_x = \frac{{{My:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ex:.4f}\ \text{{m}}")
     
     st.latex(r" E_x = M_y / V ")
-    st.latex(f" E_x = {My:.2f} kNm / {V:.2f} kN = {Ex:4f}")
+    st.latex(f" E_x = {My:.2f} kNm / {V:.2f} kN = {Ex:4f} m")
     # Ey
     st.latex(r"E_y = \frac{M_x}{V}")
     st.latex(fr"E_y = \frac{{{Mx:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ey:.4f}\ \text{{m}}")
