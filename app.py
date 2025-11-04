@@ -16,18 +16,28 @@ if V > 0:
     Ex = My / V
     Ey = Mx / V
     st.subheader("Risultati")
+        
+    # Container per Ex
+    with st.container():
+        st.markdown("### Calcolo di $E_x$")
+        col1, col2 = st.columns(2)
     
-    # Ex
-    st.latex(r"E_x = \frac{M_y}{V}")
-    st.latex(fr"E_x = \frac{{{My:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ex:.4f}\ \text{{m}}")
+        with col1:
+            st.latex(r"E_x = \frac{M_y}{V}")
     
-    st.latex(r" E_x = M_y / V ")
-    st.latex(f" E_x = {My:.2f} kNm / {V:.2f} kN = {Ex:4f} m")
-    # Ey
-    st.latex(r"E_y = \frac{M_x}{V}")
-    st.latex(fr"E_y = \frac{{{Mx:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ey:.4f}\ \text{{m}}")
-
-
+        with col2:
+            st.latex(fr"E_x = \frac{{{My:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ex:.4f}\ \text{{m}}")
+    
+    # Container per Ey
+    with st.container():
+        st.markdown("### Calcolo di $E_y$")
+        col1, col2 = st.columns(2)
+    
+        with col1:
+            st.latex(r"E_y = \frac{M_x}{V}")
+    
+        with col2:
+            st.latex(fr"E_y = \frac{{{Mx:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ey:.4f}\ \text{{m}}")
 
     # Controllo se l’eccentricità è entro il nucleo centrale
     st.write("### Verifica nucleo centrale")
