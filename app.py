@@ -20,7 +20,9 @@ if V > 0:
     # Ex
     st.latex(r"E_x = \frac{M_y}{V}")
     st.latex(fr"E_x = \frac{{{My:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ex:.4f}\ \text{{m}}")
-
+    
+    st.latex(r" E_x = M_y / V ")
+    st.latex(f" E_x = {My:.3f} / {V:.3f}")
     # Ey
     st.latex(r"E_y = \frac{M_x}{V}")
     st.latex(fr"E_y = \frac{{{Mx:.2f}\ \text{{kNm}}}}{{{V:.2f}\ \text{{kN}}}} = {Ey:.4f}\ \text{{m}}")
