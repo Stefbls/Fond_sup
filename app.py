@@ -16,10 +16,12 @@ if V > 0:
     Ex = My / V
     Ey = Mx / V
     st.subheader("Risultati")
+    # Ex
     st.latex(r"E_x = \frac{M_y}{V}")
-    st.write(f"E_x = {My:.2f} / {V:.2f} = **{Ex:.4f} m**")
+    st.latex(fr"E_x = \frac{{{My:.2f}}}{{{V:.2f}}} = {Ex:.4f}\ \text{{m}}")
+    # Ey
     st.latex(r"E_y = \frac{M_x}{V}")
-    st.write(f"E_y = {Mx:.2f} / {V:.2f} = **{Ey:.4f} m**")
+    st.latex(fr"E_y = \frac{{{Mx:.2f}}}{{{V:.2f}}} = {Ey:.4f}\ \text{{m}}")
 
     # Controllo se l’eccentricità è entro il nucleo centrale
     st.write("### Verifica nucleo centrale")
